@@ -24,7 +24,6 @@ require (
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
 	go.etcd.io/bbolt v1.3.5
-	go.etcd.io/etcd v3.3.25+incompatible
 	go.etcd.io/etcd/api/v3 v3.5.0-pre
 	go.etcd.io/etcd/client/v2 v2.305.0-pre
 	go.etcd.io/etcd/client/v3 v3.5.0-pre
