@@ -20,9 +20,9 @@ import (
 	"fmt"
 
 	etcd "go.etcd.io/etcd/clientv3"
+	naming "go.etcd.io/etcd/clientv3/grpcnaming"
 
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/naming"
 	"google.golang.org/grpc/status"
 )
 

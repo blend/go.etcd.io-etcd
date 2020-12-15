@@ -19,11 +19,10 @@ import (
 	"time"
 
 	"go.etcd.io/etcd/clientv3"
+	gnaming "go.etcd.io/etcd/clientv3/grpcnaming"
 	"go.etcd.io/etcd/clientv3/naming"
 	"go.etcd.io/etcd/integration"
 	"go.etcd.io/etcd/pkg/testutil"
-
-	gnaming "google.golang.org/grpc/naming"
 )
 
 func TestRegister(t *testing.T) {

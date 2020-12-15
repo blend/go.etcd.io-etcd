@@ -21,10 +21,9 @@ import (
 	"testing"
 
 	etcd "go.etcd.io/etcd/clientv3"
+	naming "go.etcd.io/etcd/clientv3/grpcnaming"
 	"go.etcd.io/etcd/integration"
 	"go.etcd.io/etcd/pkg/testutil"
-
-	"google.golang.org/grpc/naming"
 )
 
 func TestGRPCResolver(t *testing.T) {

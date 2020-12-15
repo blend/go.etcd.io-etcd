@@ -22,12 +22,12 @@ import (
 	"sync"
 
 	"go.etcd.io/etcd/clientv3"
+	gnaming "go.etcd.io/etcd/clientv3/grpcnaming"
 	"go.etcd.io/etcd/clientv3/naming"
 	"go.etcd.io/etcd/etcdserver/api/v3rpc/rpctypes"
 	pb "go.etcd.io/etcd/etcdserver/etcdserverpb"
 
 	"golang.org/x/time/rate"
-	gnaming "google.golang.org/grpc/naming"
 )
 
 // allow maximum 1 retry per second
