@@ -13,7 +13,6 @@ replace (
 )
 
 require (
-	github.com/coreos/etcd v3.3.25+incompatible // indirect
 	github.com/dustin/go-humanize v1.0.0
 	github.com/etcd-io/gofail v0.0.0-20190801230047-ad7f989257ca
 	github.com/gogo/protobuf v1.3.1
