@@ -33,6 +33,7 @@ require (
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
 	google.golang.org/genproto v0.0.0-20200806141610-86f49bd18e98
 	google.golang.org/grpc v1.34.0
+	google.golang.org/grpc/examples v0.0.0-20201214170045-17e2cbe88713 // indirect
 	sigs.k8s.io/yaml v1.2.0
 )
 
