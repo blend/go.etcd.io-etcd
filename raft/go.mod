@@ -2,6 +2,8 @@ module go.etcd.io/etcd/raft/v3
 
 go 1.15
 
+replace go.etcd.io/etcd/pkg/v3 => ../pkg
+
 require (
 	github.com/cockroachdb/datadriven v0.0.0-20200714090401-bf6692d28da5
 	github.com/gogo/protobuf v1.3.1
@@ -11,8 +13,7 @@ require (
 
 // Bad imports are sometimes causing attempts to pull that code.
 // This makes the error more explicit.
-replace go.etcd.io/etcd => ./FORBIDDEN_DEPENDENCY
-
-replace go.etcd.io/etcd/v3 => ./FORBIDDEN_DEPENDENCY
-
-replace go.etcd.io/etcd/pkg/v3 => ../pkg
+replace (
+	go.etcd.io/etcd => ./FORBIDDEN_DEPENDENCY
+	go.etcd.io/etcd/v3 => ./FORBIDDEN_DEPENDENCY
+)
