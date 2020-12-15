@@ -843,7 +843,7 @@ func TestStoreWatchSlowConsumer(t *testing.T) {
 	defer s.Close()
 	s.Watch("/foo", true, true, 0) // stream must be true
 	// Fill watch channel with 100 events
-	for i := 1; i <= 100; i++ {
+	for i := rune(1); i <= 100; i++ {
 		s.Set("/foo", false, string(i), v2store.TTLOptionSet{ExpireTime: v2store.Permanent}) // ok
 	}
 	// testutil.AssertEqual(t, s.WatcherHub.count, int64(1))
